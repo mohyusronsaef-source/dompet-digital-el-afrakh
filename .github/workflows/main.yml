@@ -33,9 +33,16 @@ jobs:
 
       - name: Run Unit Tests & Build Debug APK
         run: |
-          if [ -f "DompetDigitalElAfrakh/settings.gradle.kts" ]; then
-            cd DompetDigitalElAfrakh
+          SETTINGS_FILE=$(find . -maxdepth 4 -name "settings.gradle.kts" | head -n 1)
+          if [ -z "$SETTINGS_FILE" ]; then
+            echo "ERROR: File settings.gradle.kts (folder DompetDigitalElAfrakh) tidak ditemukan di repository!"
+            echo "Daftar isi repository saat ini:"
+            find . -maxdepth 3 -not -path '*/.git/*'
+            exit 1
           fi
+          PROJECT_DIR=$(dirname "$SETTINGS_FILE")
+          echo "Proyek Android ditemukan di: $PROJECT_DIR"
+          cd "$PROJECT_DIR"
           gradle testDebugUnitTest assembleDebug
 
       - name: Upload Debug APK Artifact
