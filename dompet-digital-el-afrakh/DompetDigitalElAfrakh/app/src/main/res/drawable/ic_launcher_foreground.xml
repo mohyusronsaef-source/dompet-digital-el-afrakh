@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Canteen canopy roof -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,42 L34,30 L74,30 L80,42 Z" />
+    <!-- Scalloped awning strip -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M28,42 L80,42 L80,47 C75,51 70,51 67,47 C64,51 59,51 54,47 C49,51 44,51 41,47 C38,51 33,51 28,47 Z" />
+    <!-- Canteen wallet body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,50 L76,50 L76,75 C76,77.2 74.2,79 72,79 L36,79 C33.8,79 32,77.2 32,75 Z" />
+    <!-- Fork & Spoon / Ledger accent -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M45,56 L47,56 L47,73 L45,73 Z M42,56 L44,56 L44,63 C44,64.5 45,65 46,65 C47,65 48,64.5 48,63 L48,56 L50,56 L50,63 C50,65.5 48.2,67 46,67 C43.8,67 42,65.5 42,63 Z" />
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M61,56 C63.8,56 66,58.5 66,61.5 C66,63.8 64.5,65.8 62.5,66.5 L62.5,73 L59.5,73 L59.5,66.5 C57.5,65.8 56,63.8 56,61.5 C56,58.5 58.2,56 61,56 Z" />
+</vector>

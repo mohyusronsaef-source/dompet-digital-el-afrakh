@@ -1,0 +1,6 @@
+{
+  "name": "Dompet Digital El Afrakh",
+  "description": "Aplikasi pencatatan keuangan kantin berbasis Android (Kotlin, Jetpack Compose, Room Database) 100% offline dengan keamanan PIN, foto nota, laporan PDF/Excel, dan backup/restore lokal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
